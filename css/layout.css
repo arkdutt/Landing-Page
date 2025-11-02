@@ -362,6 +362,12 @@ ul#nav li.current a { color: #F06000; }
    -webkit-animation: sql 2s ease;
 }
 
+.typescript {
+   width: 70%;
+   -moz-animation: typescript 2s ease;
+   -webkit-animation: typescript 2s ease;
+}
+
 .swift {
    width: 40%;
    -moz-animation: swift 2s ease;
@@ -394,6 +400,11 @@ ul#nav li.current a { color: #F06000; }
 }
 
 @-moz-keyframes sql {
+   0%   { width: 0px;  }
+   100% { width: 70%;  }
+ }
+
+@-moz-keyframes typescript {
    0%   { width: 0px;  }
    100% { width: 70%;  }
  }
@@ -433,6 +444,11 @@ ul#nav li.current a { color: #F06000; }
 }
 
 @-webkit-keyframes sql {
+   0%   { width: 0px;  }
+   100% { width: 70%;  }
+ }
+
+ @-webkit-keyframes typescript {
    0%   { width: 0px;  }
    100% { width: 70%;  }
  }
