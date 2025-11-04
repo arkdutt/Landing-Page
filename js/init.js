@@ -102,13 +102,50 @@
 /*	Modal Popup
 ------------------------------------------------------*/
 
+    // Store original scroll position
+    var scrollPosition = 0;
+
     $('.item-wrap a').magnificPopup({
 
        type:'inline',
-       fixedContentPos: false,
+       fixedContentPos: true,
        removalDelay: 200,
        showCloseBtn: false,
-       mainClass: 'mfp-fade'
+       mainClass: 'mfp-fade',
+       
+       // Callbacks to lock/unlock body scroll
+       callbacks: {
+          open: function() {
+             // Lock body scroll
+             scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+             $('body').css({
+                'overflow': 'hidden',
+                'position': 'fixed',
+                'top': '-' + scrollPosition + 'px',
+                'width': '100%'
+             });
+             
+             // Also lock on html element for better compatibility
+             $('html').css({
+                'overflow': 'hidden'
+             });
+          },
+          close: function() {
+             // Unlock body scroll
+             $('body').css({
+                'overflow': '',
+                'position': '',
+                'top': '',
+                'width': ''
+             });
+             $('html').css({
+                'overflow': ''
+             });
+             
+             // Restore scroll position
+             window.scrollTo(0, scrollPosition);
+          }
+       }
 
     });
 

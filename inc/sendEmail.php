@@ -2,6 +2,8 @@
 
 $siteOwnersEmail = 'arksdutt@gmail.com';
 
+$message = ""; // Initialize message
+$error = array(); // Initialize error array
 
 if($_POST) {
 

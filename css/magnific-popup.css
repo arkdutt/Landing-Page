@@ -8,8 +8,11 @@
   overflow: hidden;
   position: fixed;
   background: #000;
-  opacity: 0.8;
-  filter: alpha(opacity=80); }
+  opacity: 0.85;
+  filter: alpha(opacity=85);
+  /* Prevent background scrolling */
+  touch-action: none;
+  -webkit-overflow-scrolling: none; }
 
 .mfp-wrap {
   top: 0;
