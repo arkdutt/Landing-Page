@@ -1,0 +1,86 @@
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*~
+
+# Editor/IDE Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Node modules (if you add any Node.js tools later)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Auto-generated Firebase config (generated from .env)
+js/firebase-config.js
+
+# Logs
+logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Firebase
+.firebase/
+firebase-debug.log
+firestore-debug.log
+ui-debug.log
+
+# Optional: Uncomment if you want to gitignore your Firebase config
+# (Note: For web apps, Firebase config is safe to commit as it's client-side)
+# js/firebase-config.js
+
+.vercel
+.env*.local
+site-context.txt
+system-prompt.txt

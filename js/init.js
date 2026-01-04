@@ -105,7 +105,7 @@
     // Store original scroll position
     var scrollPosition = 0;
 
-    $('.item-wrap a').magnificPopup({
+    $('.item-wrap a, .experience-link').magnificPopup({
 
        type:'inline',
        fixedContentPos: true,
