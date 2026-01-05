@@ -20,3 +20,4 @@ const auth = getAuth(app);
 
 export { db, auth, collection, getDocs, addDoc, updateDoc, deleteDoc, doc, query, orderBy, signInWithEmailAndPassword, onAuthStateChanged, signOut };
 
+
